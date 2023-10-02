@@ -1,0 +1,115 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    padding: 15px 0;
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+  }
+  
+  .navbar-nav .nav-item {
+    margin: 0 10px;
+  }
+  
+  /* Carousel styles */
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+  }
+  
+  .carousel-caption h5 {
+    font-size: 2rem;
+  }
+  
+  .carousel-caption p {
+    font-size: 1.25rem;
+  }
+  
+  /* About section styles */
+  .about {
+    padding: 60px 0;
+  }
+  
+  .about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-text p {
+    font-size: 1.25rem;
+  }
+  
+  /* Services section styles */
+  .services {
+    padding: 60px 0;
+  }
+  
+  .services .card {
+    margin-bottom: 20px;
+  }
+  
+  /* Team section styles */
+  .team {
+    padding: 60px 0;
+  }
+  
+  .team .card {
+    margin-bottom: 20px;
+  }
+  
+  /* Contact section styles */
+  .contact {
+    padding: 60px 0;
+  }
+  
+  .contact form {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .contact form input,
+  .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .contact form button {
+    width: 100%;
+  }
+  
+  /* Footer styles */
+  footer {
+    padding: 20px 0;
+    color: #fff;
+  }
+  
+  /* Media queries for responsive design */
+  
+  @media (max-width: 768px) {
+    .navbar-brand {
+      font-size: 20px;
+    }
+  
+    .carousel-caption h5 {
+      font-size: 1.5rem;
+    }
+  
+    .carousel-caption p {
+      font-size: 1rem;
+    }
+  }
+  

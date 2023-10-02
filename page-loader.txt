@@ -1,0 +1,49 @@
+<div id="loader" class="loader">
+    <img src="your_logo_image_path.png" alt="Logo">
+  </div>
+  <div id="content" class="content">
+    <!-- Your page content goes here -->
+  </div>
+css
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1111;
+    background-color: #e8dbdb;
+    transition: all 10s;
+  }
+  
+  .loader img {
+    height: 120px;
+    width: 120px;
+    animation: spinlogo 2s linear infinite;
+  }
+  
+  .content {
+    display: none;
+  }
+  
+  @keyframes spinlogo {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+javascript
+
+// Simulate page loading
+window.addEventListener('load', () => {
+  const loader = document.getElementById('loader');
+  const content = document.getElementById('content');
+
+  // Hide the loader and show the content after a delay (simulating page load)
+  setTimeout(() => {
+    loader.style.display = 'none';
+    content.style.display = 'block';
+  }, 2000); // Adjust the delay as needed
+});

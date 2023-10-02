@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #ececec;
+}
+
+/*------------ Login container ------------*/
+
+.box-area{
+    width: 930px;
+}
+
+/*------------ Right box ------------*/
+
+.right-box{
+    padding: 40px 30px 40px 40px;
+}
+
+/*------------ Custom Placeholder ------------*/
+
+::placeholder{
+    font-size: 16px;
+}
+
+.rounded-4{
+    border-radius: 20px;
+}
+.rounded-5{
+    border-radius: 30px;
+}
+
+
+/*------------ For small screens------------*/
+
+@media only screen and (max-width: 768px){
+
+  .box-area{
+     margin: 0 10px;
+
+  }
+  .left-box{
+     height: 100px;
+     overflow: hidden;
+  }
+  .right-box{
+     padding: 20px;
+  }
+
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1111;
+    background-color: #fff;
+    transition: all 10s;
+  }
+  
+  .loader img {
+    height: 150px;
+    width: 150px;
+    animation: spinlogo 2s linear infinite;
+  }
+  
+  .content {
+    display: none;
+  }
+  
+  @keyframes spinlogo {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
